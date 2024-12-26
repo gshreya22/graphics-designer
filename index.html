@@ -1,35 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal to Vertical View</title>
-    <style>
-        /* General container styling */
-        .container {
-            display: flex;
-            flex-direction: row; /* Default to horizontal */
-            gap: 10px;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-        /* For each item */
-        .item {
-            background-color: lightblue;
-            border: 1px solid #000;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Media query for vertical layout */
-        @media (max-width: 600px) {
-            .container {
-                flex-direction: column; /* Switch to vertical */
-            }
-        }
-    </style>
+li a {
+  display: block;
+  width: 60px;
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
     <div class="container">
