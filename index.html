@@ -1,14 +1,44 @@
-<html>
-  <head>
-<title></title>
-<style type="text/css">
-#verticle-line{
-width:1px;
-height:500px;
-Background color:white;
-}
-</style>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal to Vertical View</title>
+    <style>
+        /* General container styling */
+        .container {
+            display: flex;
+            flex-direction: row; /* Default to horizontal */
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* For each item */
+        .item {
+            background-color: lightblue;
+            border: 1px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Media query for vertical layout */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Switch to vertical */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
   <body>
     <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
